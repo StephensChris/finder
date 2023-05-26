@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="n"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="shortcut icon" href="media/search-favicon.png" type="image/x-icon">
+
+    <title>Finder - Search Solution</title>
+  </head>
+  <body>
+
+    <section class="calc-section">
+      <div class="calculator-container">
+        <img src="/media/calculator.png" title="Calculator">
+      </div>
+    </section>
+
+    <div class="container">
+
+      <section class="search-section">
+
+        <h1>Finder</h1>
+
+        <form id="searchbar-section" action="https://www.google.com/search" target="_blank">
+          
+          <div id="searchbar-cont"> 
+            <input id="searchbar" type="text" name="q" autocomplete="off" autofocus>
+            <h6 id="reminder">Don't forget to hold 'control'</h6>
+          </div>
+          
+          <div id="search-selector-cont"> 
+            
+            <a id="search-selector" title="Search with Google">
+              <img id="search-sel-img" src="media/google.png">
+            </a>
+            
+          </div>
+          
+        </form>
+
+      </section>
+
+      <section class="options-section">
+
+        <div class="row"> <!-- SEARCH+ SECTION -->
+
+          <div class="search-plus-options-col col-4">
+
+            <h3>Search+</h3>
+
+            <div class="search-plus-options-cont">
+
+              <a class="search-plus-options" title="Reddit Search+">
+                <img id="sp-reddit" src="media/reddit.png">
+              </a>
+              <a class="search-plus-options" title="StackOverflow Search+">
+                <img id="sp-stackoverflow" src="media/stackoverflow.png">
+              </a>
+              <a class="search-plus-options" title="Youtube Search+">
+                <img id="sp-youtube" src="media/youtube.png">
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- RESEARCH SECTION --> <!-- --------------NEEDS FIXING-------------- --> 
+          
+          <div class="research-options-col col-4">
+
+            <h3>Research</h3>
+
+            <form class="research-options-cont" >
+
+              <a id="ro-reddit" class="research-options"  title="">
+                <img id="ro-reddit-img" src="media/reddit.png">
+              </a>
+              <a id="ro-wikipedia" class="research-options" title="">
+                <img id="ro-wikipedia-img" src="media/wikipedia.png">
+              </a>
+              <a id="ro-youtube" class="research-options" title="">
+                <img id="ro-youtube-img" src="media/youtube.png">
+              </a>
+
+            </form>
+
+          </div>
+
+          <!-- SHOPPING SECTION -->
+
+          <div class="shopping-options-col col-4">
+
+            <h3>Shopping</h3>
+
+            <form class="shopping-options-cont" >
+
+              <a id="sh-amazon" class="shopping-options" title="">
+                <img id="sh-amazon-img" src="media/amazon.png">
+              </a>
+              <a id="sh-walmart" class="shopping-options" title="">
+                <img id="sh-walmart-img" src="media/walmart.png">
+              </a>
+              <a id="sh-target" class="shopping-options" title="">
+                <img id="sh-target-img" src="media/target.png">
+              </a>
+              
+            </form>
+            
+            <form class="shopping-options-cont" >
+              
+              <a id="sh-lowes" class="shopping-options" title="">
+                <img id="sh-lowes-img" src="media/lowes.png">
+              </a>
+              <a id="sh-hfreight" class="shopping-options" title="">
+                <img id="sh-hfreight-img" src="media/hfreight.png">
+              </a>
+              <a id="sh-homedepot" class="shopping-options" title="">
+                <img id="sh-homedepot-img" src="media/homedepot.png">
+              </a>
+              
+            </form>
+            
+            <form class="shopping-options-cont" >
+              
+              <a id="sh-pcppicker" class="shopping-options" title="">
+                <img id="sh-pcppicker-img" src="media/pcppicker.png">
+              </a>
+              <a id="sh-newegg" class="shopping-options" title="">
+                <img id="sh-newegg-img" src="media/newegg.png">
+              </a>
+              <a id="sh-bestbuy" class="shopping-options" title="">
+                <img id="sh-bestbuy-img" src="media/bestbuy.png">
+              </a>
+
+            </form>
+          </div>
+
+        </div>
+
+      </section>
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <script  
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" 
+      crossorigin="anonymous">
+    </script>
+
+  </body>
+</html>

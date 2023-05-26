@@ -1,0 +1,243 @@
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #202124;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  height: 100vh;
+}
+
+/* ----------------CALCULATOR---------------- */
+
+.calc-section {
+  position: relative;
+}
+
+.calculator-container {
+  position: absolute;
+  padding: 10px;
+  border-radius: 50%;
+  top: 16px;
+  right: 16px;
+  transition: 0.3s ease-in-out;
+}
+.calculator-container:hover {
+  background: #303134;
+  cursor: pointer;
+  box-shadow: 0 0 15px #141414;
+  transition: 0.3s ease-in-out;
+}
+
+.calculator-container img {
+  width: 40px;
+  height: 40px;
+}
+
+/* ----------------CALCULATOR---------------- */
+
+/* ----------------SEARCH---------------- */
+
+.search-section {
+  display: grid;
+  place-items: center;
+}
+
+.search-section h1 {
+  margin: 15% 0 0 0;
+}
+
+#searchbar-section {
+  /* background: lightblue; */
+  background: #202124;
+
+  margin: 2.5% 0 5% 0;
+  width: 50%;
+  border: 2px solid #303134;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+
+  /* 
+  display: flex;
+  justify-content: center;
+  place-items: center; 
+  */
+}
+
+#search-selector-cont {
+  /* background: blue; */
+
+  border-radius: 50%;
+  width: 60px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+
+  background: #202124;
+  outline: none;
+  border: none;
+
+  margin: 0 0 0 4px;
+
+  width: 46px;
+  height: 46px;
+  border-radius: 46px;
+
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#search-selector:hover {
+  background: #303134;
+  transition: 0.3s ease-in-out;
+}
+
+#search-sel-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 36px;
+}
+
+#searchbar-cont {
+  /* background: green; */
+  color: white;
+
+  width: 100%;
+  height: 50px;
+  font-size: 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* align-items: center; */
+}
+
+#searchbar {
+  background: #202124;
+  color: white;
+
+  margin: 0 0 0 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+#searchbar:focus ~ #reminder {
+  opacity: 100;
+}
+
+#reminder {
+  opacity: 0;
+  position: absolute;
+  color: grey;
+  text-align: center;
+
+  right: 27%;
+  top: 130%;
+  font-style: italic;
+  transition: 0.3s ease-in-out;
+}
+
+/* ----------------SEARCH---------------- */
+
+/* ----------------OPTIONS---------------- */
+
+.options-section {
+  /* background: red; */
+  display: grid;
+  place-items: center;
+
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* width: 80%; */
+}
+
+.search-plus-options-col {
+  /* background: teal; */
+
+  padding: 0 0 20px 0;
+  width: 360px;
+}
+.research-options-col {
+  /* background: green; */
+  /* margin: 0 5px; */
+
+  padding: 0 0 20px 0;
+  width: 360px;
+}
+.shopping-options-col {
+  /* background: blue; */
+
+  padding: 0 0 20px 0;
+  width: 360px;
+}
+
+.search-plus-options-col h3,
+.research-options-col h3,
+.shopping-options-col h3 {
+  margin: 20px;
+}
+
+.search-plus-options-cont,
+.research-options-cont,
+.shopping-options-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-plus-options,
+.research-options,
+.shopping-options {
+  /* background: pink; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 5px;
+  width: 80px;
+  height: 80px;
+  border-radius: 5%;
+
+  transition: 0.3s ease-in-out;
+}
+
+.search-plus-options:hover,
+.research-options:hover,
+.shopping-options:hover {
+  background: #303134;
+  cursor: pointer;
+  box-shadow: 0 0 20px #141414;
+  transition: 0.3s ease-in-out;
+}
+
+#sp-reddit,
+#sp-stackoverflow,
+#sp-youtube,
+#ro-youtube-img,
+#ro-reddit-img,
+#ro-wikipedia-img,
+#sh-amazon-img,
+#sh-lowes-img,
+#sh-hfreight-img,
+#sh-homedepot-img,
+#sh-walmart-img,
+#sh-target-img,
+#sh-bestbuy-img,
+#sh-pcppicker-img,
+#sh-newegg-img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* ----------------OPTIONS---------------- */
