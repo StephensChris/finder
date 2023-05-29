@@ -1,1 +1,1 @@
-# finder - [go](stephenschris.github.io/finder){:target="_blank" rel="noopener"}
+# finder - stephenschris.github.io/finder
