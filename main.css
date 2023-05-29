@@ -6,35 +6,67 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   height: 100vh;
+  /* width: 100vw; */
 }
 
-/* ----------------CALCULATOR---------------- */
+/* ----------------CALCULATOR & TODO---------------- */
 
+.todo-section,
 .calc-section {
   position: relative;
 }
 
-.calculator-container {
+.todo-container {
+  left: 16px;
+}
+
+.calc-container {
+  right: 16px;
+}
+
+.calc-background {
+  background: #303134;
+  opacity: 0;
+
+  width: 400px;
+  height: 630px;
+  border-radius: 30px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+
+  /* border: solid #474747 6px; */
+  /* box-sizing: border-box; */
+  box-shadow: 0 0 15px #141414;
+
+  /* transform: scale(100%); */
+  transition: 0.3s ease-in-out;
+}
+
+.todo-container,
+.calc-container {
   position: absolute;
   padding: 10px;
   border-radius: 50%;
   top: 16px;
-  right: 16px;
   transition: 0.3s ease-in-out;
 }
-.calculator-container:hover {
+
+.todo-container:hover,
+.calc-container:hover {
   background: #303134;
   cursor: pointer;
   box-shadow: 0 0 15px #141414;
   transition: 0.3s ease-in-out;
 }
 
-.calculator-container img {
+.todo-container img,
+.calc-container img {
   width: 40px;
   height: 40px;
 }
 
-/* ----------------CALCULATOR---------------- */
+/* ----------------CALCULATOR & TODO---------------- */
 
 /* ----------------SEARCH---------------- */
 
@@ -241,3 +273,14 @@ body {
 }
 
 /* ----------------OPTIONS---------------- */
+
+/* ----------------TOGGLEABLES---------------- */
+
+.opacity-on {
+  opacity: 100;
+}
+.opacity-off {
+  opacity: 0;
+}
+
+/* ----------------TOGGLEABLES---------------- */

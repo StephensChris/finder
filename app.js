@@ -1,3 +1,6 @@
+const calcContainer = document.querySelector(".calc-container");
+const calcBackground = document.querySelector(".calc-background");
+
 const searchSelector = document.querySelector("#search-selector");
 const searchBarSection = document.querySelector("#searchbar-section");
 
@@ -40,6 +43,15 @@ const searchSelMinLevel = 0;
 const searchSelMaxLevel = 2;
 
 let searchSelLevel = 0;
+
+// calcBackground.style.opacity = "0";
+
+calcContainer.onclick = () => {
+  calcBackground.classList.toggle("opacity-on");
+  calcContainer.classList.toggle("opacity-off");
+};
+
+// ---------------SEARCH SECTION---------------
 
 searchSelector.onclick = () => searchBarSection.submit();
 
